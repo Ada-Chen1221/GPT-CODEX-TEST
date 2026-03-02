@@ -1,0 +1,3 @@
+id,prompt
+1,"请判断这段文本的情感倾向，并返回 JSON: {\"answer\":\"...\",\"label\":\"positive|neutral|negative\"}. 文本：这个产品真的非常好用。"
+2,"请判断这段文本的情感倾向，并返回 JSON: {\"answer\":\"...\",\"label\":\"positive|neutral|negative\"}. 文本：质量一般，没有预期好。"
