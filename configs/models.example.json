@@ -1,0 +1,35 @@
+{
+  "models": [
+    {
+      "name": "gpt-4o-mini",
+      "provider": "gpt",
+      "api_key_env": "OPENAI_API_KEY",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-4o-mini"
+    },
+    {
+      "name": "deepseek-chat",
+      "provider": "deepseek",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "base_url": "https://api.deepseek.com/v1",
+      "model": "deepseek-chat"
+    },
+    {
+      "name": "qwen-turbo",
+      "provider": "qianwen",
+      "api_key_env": "QIANWEN_API_KEY",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen-turbo"
+    },
+    {
+      "name": "llama-3.1-8b-instruct",
+      "provider": "llama",
+      "api_key_env": "LLAMA_API_KEY",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "meta-llama/llama-3.1-8b-instruct"
+    }
+  ],
+  "extract_fields": [
+    "attitude_score"
+  ]
+}
