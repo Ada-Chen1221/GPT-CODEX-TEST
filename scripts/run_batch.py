@@ -9,7 +9,7 @@ import time
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
 
 @dataclass
@@ -90,7 +90,7 @@ def call_model(client, model: str, prompt: str, temperature: float, max_tokens: 
     raise RuntimeError(f"API call failed after retries: {last_err}")
 
 
-def extract_attitude_score(text: str) -> int | None:
+def extract_attitude_score(text: str) -> Optional[int]:
     # 优先尝试 JSON
     try:
         payload = json.loads(text)
